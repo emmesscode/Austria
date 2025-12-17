@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Egy kis meglepetés neked ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Fixed video background -->
+  <video id="heroVideo" autoplay muted loop playsinline>
+    <source src="assets/alps.mp4" type="video/mp4" />
+  </video>
+  <div class="video-overlay"></div>
+
+  <div class="wrap">
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Csak neked ❤️</div>
+        <h1>Egy meglepetés,<br />ami kimozdít a hétköznapokból.</h1>
+        <p class="sub">
+          Terveztem nekünk valamit. Egy helyet, ahol lelassulunk,
+          friss levegő, közös idő, új élmények – csak ketten.
+        </p>
+
+        <div class="actions">
+          <button class="primary" id="revealBtn">Leplezd le a meglepetést</button>
+        </div>
+      </div>
+      <div class="scroll-indicator"></div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-section" id="contentSection">
+      <div class="content-container">
+        <div class="grid">
+          <!-- Main Reveal Card - Hotel Booking Style -->
+          <div class="card reveal hotel-card" id="revealCard" aria-live="polite">
+            <!-- Premium Reveal Curtain & Spotlight -->
+            <div class="reveal-curtain" aria-hidden="true">
+              <div class="curtain-shine"></div>
+            </div>
+            <div class="reveal-spotlight" aria-hidden="true"></div>
+
+
+
+            <div class="destination" id="dest">
+              <!-- Hotel Header -->
+              <div class="hotel-header">
+                <div class="hotel-badge">Szállás foglalva ✓</div>
+                <h2 class="hotel-name">
+                  <span class="revealed-content">Gasthof Auwirt in Aurach</span>
+                  <span class="hidden-content">??? ??? ???</span>
+                </h2>
+                <div class="hotel-rating">
+                  <span class="rating-score">9.2</span>
+                  <div class="rating-info">
+                    <span class="rating-label">Kiváló</span>
+                    <span class="rating-reviews">• 450 értékelés</span>
+                  </div>
+                </div>
+                <div class="hotel-location">
+                  <span class="revealed-content">📍 Paß-Thurn-Straße 13, 6371 Aurach bei Kitzbühel, Austria</span>
+                  <span class="hidden-content">📍 ???</span>
+                </div>
+              </div>
+
+              <!-- Hotel Photo Gallery -->
+              <div class="hotel-gallery reveal-photos">
+                <div class="gallery-main">
+                  <img src="assets/771762177.jpg" alt="Gasthof Auwirt exterior" />
+                </div>
+                <div class="gallery-grid">
+                  <img src="assets/615837588.jpg" alt="Hotel suite" />
+                  <img src="assets/654414357.jpg" alt="Hotel interior" />
+                  <img src="assets/654417194.jpg" alt="Hotel view" />
+                  <img src="assets/654418447.jpg" alt="Hotel room" />
+                </div>
+              </div>
+
+              <!-- Booking Details -->
+              <div class="booking-details">
+                <div class="booking-dates">
+                  <div class="date-box">
+                    <span class="date-label">Bejelentkezés</span>
+                    <span class="date-value">
+                      <span class="revealed-content">Péntek, 6 Március 2026</span>
+                      <span class="hidden-content">??? ???</span>
+                    </span>
+                    <span class="date-time revealed-content">15:00 - 18:00</span>
+                  </div>
+                  <div class="date-separator">→</div>
+                  <div class="date-box">
+                    <span class="date-label">Kijelentkezés</span>
+                    <span class="date-value">
+                      <span class="revealed-content">Vasárnap, 8 Március 2026</span>
+                      <span class="hidden-content">??? ???</span>
+                    </span>
+                    <span class="date-time revealed-content">07:00 - 10:00</span>
+                  </div>
+                  <div class="nights-info">
+                    <span class="nights-count">
+                      <span class="revealed-content">2 éjszaka</span>
+                      <span class="hidden-content">? éjszaka</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="room-info">
+                  <h3>Szobatípus</h3>
+                  <div class="room-type">
+                    <span class="room-name">
+                      <span class="revealed-content">Suite - Private Suite</span>
+                      <span class="hidden-content">??? ???</span>
+                    </span>
+                    <ul class="room-features revealed-content">
+                      <li>👨‍👩‍👧 2 felnőtt + 2 gyerek</li>
+                      <li>🏠 Privát apartman</li>
+                      <li>🏔️ Kilátás a hegyekre</li>
+                      <li>🛁 Saját fürdőszoba</li>
+                      <li>☕ Reggeli az árban</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hotel Highlights -->
+              <div class="hotel-highlights">
+
+              </div>
+
+              <!-- Map Section -->
+              <div class="map-section">
+                <h3>📍 Helyszín</h3>
+                <div class="map-container">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.4!2d12.3948!3d47.4405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477639b3a49ca72d%3A0x8c8ad8a3c3a1a1a!2sGasthof%20Auwirt!5e0!3m2!1sen!2sat!4v1234567890"
+                    width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+                <p class="map-note">10 percre Kitzbühel-töl, csodálatos hegyekkel körülvéve</p>
+              </div>
+
+              <!-- Booking Link Button -->
+              <div class="booking-link">
+                <a href="https://www.booking.com/Share-h5Hd8LP" target="_blank" rel="noopener noreferrer"
+                  class="booking-button">
+                  <span class="booking-icon">🏨</span>
+                  <span class="booking-text">
+                    <span class="booking-label">Részletek megtekintése</span>
+                    <span class="booking-sublabel">Booking.com oldalon</span>
+                  </span>
+                  <span class="booking-arrow">→</span>
+                </a>
+              </div>
+
+              <!-- Sentimental Note -->
+              <div class="sentimental-note">
+                <p>
+                  <b>Ugyanaz az ország, új emlékekkel.</b><br>
+                  Régen, jártál itt - egy fejezet volt, amit teljes szívvel éltél meg.
+                  Most visszatérsz, de ezúttal már nem egyedül, hanem együtt, <b>családként</b>. 🇦🇹❤️
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Details Card -->
+          <div class="card">
+            <div class="tag">Miről szól ez az ajándék?</div>
+            <div class="list">
+              <div class="item">
+                <b>Visszatérés az Alpokhoz</b>
+                Az a tiszta hegyi levegő, a csend és a széles panoráma –
+                visszatérünk oda, ahol már otthon érzed magad. Ez a
+                visszatérés nem ugyanaz, mint régen: most együtt érkezünk,
+                és minden pillanat közös emlékké válik.
+              </div>
+              <div class="item">
+                <b>Friss levegő, hosszú séták</b>
+                Lassú reggelek, mély levegővételek, kéz a kézben a völgyben,
+                megállások csak azért, hogy ránézzünk a hegyekre és egymásra.
+                Ebben a tempóban minden lépés megnyugvás.
+              </div>
+              <div class="item">
+                <b>Ha szerencsénk van: hó</b>
+                Puha hó ropog a lábunk alatt, a fákon fehér fény, bent
+                meleg ital és kuckózás. A kinti csöndben csak a hó és a
+                mosolyod hallatszik.
+              </div>
+              <div class="item">
+                <b>A visszatérés érzése</b>
+                Van benne nosztalgia és újdonság egyszerre: ugyanaz az ország,
+                de más történet, mert most együtt térünk vissza.
+                Nem csak felidézzük, hanem továbbírjuk azt, amit szeretsz.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <div class="footer-heart">❤️</div>
+          <div class="footer-message">Boldog karácsonyt</div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Snowfall effect
+    const flakeCount = 20;
+    for (let i = 0; i < flakeCount; i++) {
+      const f = document.createElement("div");
+      f.className = "flake";
+      const left = Math.random() * 100;
+      const dur = 8 + Math.random() * 10;
+      const size = 3 + Math.random() * 5;
+      const drift = (Math.random() * 120 - 60) + "px";
+      f.style.left = left + "vw";
+      f.style.width = f.style.height = size + "px";
+      f.style.animationDuration = dur + "s";
+      f.style.setProperty("--x", drift);
+      f.style.opacity = (0.35 + Math.random() * 0.45).toFixed(2);
+      document.body.appendChild(f);
+      f.style.animationDelay = (-Math.random() * dur) + "s";
+    }
+
+    const revealBtn = document.getElementById("revealBtn");
+    const revealCard = document.getElementById("revealCard");
+    const contentSection = document.getElementById("contentSection");
+
+    let isRevealed = false;
+
+    // Smooth scroll reveal on button click
+    revealBtn.addEventListener("click", () => {
+      isRevealed = true;
+      revealBtn.classList.add('clicked');
+      document.body.classList.add('reveal-start');
+      contentSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      // Add scroll class to body
+      setTimeout(() => {
+        document.body.classList.add('scrolled');
+      }, 300);
+
+      // Reveal content after scroll
+      setTimeout(() => {
+        contentSection.classList.add('visible');
+        revealCard.classList.add('revealed');
+        // Restore hero visibility after reveal
+        setTimeout(() => {
+          document.body.classList.remove('reveal-start');
+        }, 600);
+      }, 800);
+    });
+
+    // Track scroll position
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+      clearTimeout(scrollTimeout);
+
+      if (window.scrollY > 100) {
+        document.body.classList.add('scrolled');
+
+        // Only reveal if button was clicked
+        if (isRevealed) {
+          scrollTimeout = setTimeout(() => {
+            if (window.scrollY > 200) {
+              contentSection.classList.add('visible');
+              revealCard.classList.add('revealed');
+            }
+          }, 200);
+        }
+      } else {
+        document.body.classList.remove('scrolled');
+      }
+    });
+
+    // (Details section removed per request)
+  </script>
+</body>
+
+</html>
